@@ -29,7 +29,6 @@
         <a href="#news">News</a>
         <a href="#publications">Publications</a>
         <a href="#research">Research</a>
-        <a href="#work">Work</a>
         <a href="assets/VishwanathanAK_CV.pdf">CV</a>
       </nav>
     </div>
@@ -39,7 +38,6 @@
     <main id="main">
       <section class="hero" aria-labelledby="name">
         <h1 id="name">A.K. Vishwanathan</h1>
-        <p class="role">Software Engineer (Machine Learning) at Eve&nbsp;Inc.</p>
 
         <figure class="scan">
           <div class="scan-frame" tabindex="0" role="img"
@@ -162,13 +160,9 @@
             <h3>Mechanistic interpretability of text-to-image encoders</h3>
             <p class="where">Independent research collaboration</p>
             <p class="when"><time>Jul&ndash;Sep 2026</time></p>
-            <p>I adapted <a href="https://doi.org/10.18653/v1/2024.acl-long.524">Diffusion Lens</a> and
-              information-flow methods to the Qwen3 text encoder inside FLUX.2 Klein (4B). I built three
-              complementary lenses (logit, diffusion and Jacobian) and combined the layer at which each token&rsquo;s
-              concept emerges into token cards that sort concept formation into seven patterns. Along the way I
-              traced a silent activation-cache corruption, RMSNorm writing through aliased views under
-              <code>accelerate</code> CPU offload, and rebuilt capture with fingerprint checks so runs are
-              bit-reproducible.</p>
+            <p>Studied how the text encoder of FLUX.2 Klein forms concepts layer by layer, using
+              <a href="https://doi.org/10.18653/v1/2024.acl-long.524">Diffusion Lens</a> alongside logit and
+              Jacobian lenses.</p>
           </div>
         </article>
 
@@ -181,11 +175,8 @@
             <p class="where">With <a href="https://www.iitkgp.ac.in/department/ME/faculty/me-skpal">Prof. Surjya K.
               Pal</a>, Centre of Excellence in Advanced Manufacturing Technology, IIT Kharagpur</p>
             <p class="when"><time>Sep 2022&ndash;Apr 2025</time></p>
-            <p>Technical lead on a government-funded AI4ICPS project (about USD&nbsp;60k). I designed the unsupervised
-              B-scan pipeline that became our patent, then added an LSTM/GRU model that predicts an adaptive threshold
-              for each A-scan from windowed features, reaching about 0.91 validation R&sup2; against hand-annotated
-              scans. Parallelised across CPU cores and shipped as the desktop app iToFD, it cuts analysis of a 15&nbsp;m
-              weld from 8&ndash;10 hours of manual inspection to 2&ndash;3 minutes at 95% accuracy.</p>
+            <p>Led the technical work on iToFD, an unsupervised system that finds and sizes weld defects in
+              ultrasonic scans. It cut inspection of a 15&nbsp;m weld from hours to minutes.</p>
           </div>
         </article>
 
@@ -200,10 +191,8 @@
               and <a href="https://cua.mit.edu/people/sri-krishna-vadlamani">Dr. Sri Krishna Vadlamani</a>, EECS,
               Massachusetts Institute of Technology</p>
             <p class="when"><time>Jul&ndash;Dec 2023</time></p>
-            <p>I built a loss-based data-pruning pipeline that ranks training examples by cross-entropy and trains
-              only on the hardest subset. A 2-layer, 256-mode Clements Mach&ndash;Zehnder network (about 132k
-              parameters) held 97.67% MNIST test accuracy on the hardest 20k examples and 97.01% on the hardest 10k.
-              An iterative pruner let an MLP reach 96.97% on 6.4k of the 60k training images.</p>
+            <p>Trained optical neural networks on only the hardest training examples; they kept about 97% MNIST
+              accuracy using a sixth of the data.</p>
           </div>
         </article>
 
@@ -217,9 +206,8 @@
             <p class="where">With <a href="https://research.birmingham.ac.uk/en/persons/mohan-sridharan/">Prof.
               Mohan Sridharan</a>, School of Computer Science, University of Birmingham</p>
             <p class="when"><time>Jun&ndash;Aug 2023</time></p>
-            <p>I simulated agents in AI Habitat on the Gibson dataset that must find several object classes under
-              partial observability, and compared DRQ, spatial-relation graphs with GCNs, and sequence-agnostic
-              navigation to see how spatial priors and semantic maps cut search cost across rooms.</p>
+            <p>Compared methods for agents that must find several objects in unfamiliar homes, using simulation in
+              AI Habitat.</p>
           </div>
         </article>
 
@@ -233,31 +221,8 @@
             <p class="where">With <a href="https://www.iima.ac.in/faculty-research/faculty-directory/Ankur-Sinha">Prof.
               Ankur Sinha</a>, Centre for Data Science and AI, IIM Ahmedabad</p>
             <p class="when"><time>Dec 2022&ndash;Jan 2023</time></p>
-            <p>I framed neural-network hyperparameter tuning as a bilevel program solved by a micro-genetic algorithm,
-              then added a linear-programming step that computes steepest-descent directions for local refinement. On
-              MNIST and CIFAR-10 this lifted test accuracy from 73% to 78%.</p>
-          </div>
-        </article>
-      </section>
-
-      <section id="work" aria-labelledby="work-h">
-        <h2 id="work-h">Work</h2>
-
-        <article class="entry">
-          <time>May 2025&ndash;now</time>
-          <div>
-            <h3>Eve Inc.</h3>
-            <p class="where">Software Engineer (Machine Learning)</p>
-            <h4>Four Vectors: egocentric video pipelines</h4>
-            <p>Built the Backblaze B2 to RunPod GPU pipeline that processed 111.6 hours of raw tapes at 64% yield.
-              Caught near-duplicate and train/test-leaked episodes by pooling 384-d DINOv2 embeddings of eight frames
-              into a FAISS cosine index, backed by 64-bit perceptual hashes for re-encodes. Fused optical flow with
-              YAMNet audio to detect idle time, and redacted PII with YOLO-World and SAM&nbsp;2.</p>
-            <h4>Ode: real-time recommendations</h4>
-            <p>Owned the embedding pipeline for a real-time event recommender over 50K events in Pinecone; a two-tower
-              model trained on 500K user&ndash;event interactions improved recall@50 by 12%. Cut p95 latency from 400
-              to 150&nbsp;ms at peak, and moved nearline fine-tuning from a single EC2 instance to SageMaker, with a
-              Glue-to-S3 ETL pipeline and blue-green index swaps run by Step Functions and Lambda.</p>
+            <p>Treated hyperparameter tuning as a bilevel problem, solved with a genetic algorithm plus a
+              linear-programming refinement step.</p>
           </div>
         </article>
       </section>
