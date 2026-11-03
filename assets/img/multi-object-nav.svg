@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Schematic: an agent with a limited field of view plans a path through a multi-room floor plan to find several target objects">
+<rect width="320" height="200" fill="#ffffff"/>
+<defs><pattern id="h" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#dbe2e8" stroke-width="2"/></pattern></defs>
+<rect x="222" y="107" width="86" height="81" fill="url(#h)"/>
+<rect x="122" y="12" width="186" height="91" fill="#eef2f6"/>
+<rect x="10" y="10" width="300" height="180" stroke="#1b2733" stroke-width="3" stroke-linecap="square" fill="none"/>
+<path d="M120 10 V58 M120 84 V140 M120 166 V190" stroke="#1b2733" stroke-width="3" stroke-linecap="square" fill="none"/>
+<path d="M120 105 H190 M214 105 H310" stroke="#1b2733" stroke-width="3" stroke-linecap="square" fill="none"/>
+<path d="M220 105 V130 M220 156 V190" stroke="#1b2733" stroke-width="3" stroke-linecap="square" fill="none"/>
+<rect x="28" y="24" width="50" height="22" fill="#c9d3dc"/><rect x="250" y="26" width="40" height="28" fill="#c9d3dc"/><rect x="140" y="150" width="34" height="24" fill="#c9d3dc"/>
+<path d="M52 160 C80 160 100 150 120 153 C150 156 165 138 176 130 C186 122 196 114 202 104 C210 90 230 72 256 74 C272 76 266 92 248 98 C228 104 210 106 204 116 C198 130 206 142 222 143 C240 145 250 158 256 166" fill="none" stroke="#1d4f91" stroke-width="1.6" stroke-dasharray="4 4" stroke-linecap="round"/>
+<rect x="172" y="122" width="12" height="12" fill="#1b2733"/>
+<path d="M262 61 L270 75 L254 75 Z" fill="none" stroke="#1b2733" stroke-width="1.8"/>
+<path d="M262 160 L270 168 L262 176 L254 168 Z" fill="none" stroke="#1b2733" stroke-width="1.8"/>
+<path d="M52 160 L104 132 A58 58 0 0 1 108 176 Z" fill="#1d4f91" fill-opacity="0.12"/>
+<circle cx="52" cy="160" r="7" fill="#1d4f91"/><path d="M57 156 L64 160 L57 164 Z" fill="#ffffff"/>
+</svg>

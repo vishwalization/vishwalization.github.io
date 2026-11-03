@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Schematic: a genetic-algorithm population over hyperparameters and weights, with a linear-programming descent step toward lower validation loss">
+<rect width="320" height="200" fill="#ffffff"/>
+<ellipse cx="205" cy="92" rx="12" ry="7" transform="rotate(-25 205 92)" fill="none" stroke="#c9d3dc" stroke-width="1.2"/>
+<ellipse cx="205" cy="92" rx="28" ry="15" transform="rotate(-25 205 92)" fill="none" stroke="#c9d3dc" stroke-width="1.2"/>
+<ellipse cx="205" cy="92" rx="45" ry="25" transform="rotate(-25 205 92)" fill="none" stroke="#c9d3dc" stroke-width="1.2"/>
+<ellipse cx="205" cy="92" rx="62" ry="34" transform="rotate(-25 205 92)" fill="none" stroke="#c9d3dc" stroke-width="1.2"/>
+<ellipse cx="205" cy="92" rx="80" ry="44" transform="rotate(-25 205 92)" fill="none" stroke="#c9d3dc" stroke-width="1.2"/>
+<ellipse cx="205" cy="92" rx="100" ry="55" transform="rotate(-25 205 92)" fill="none" stroke="#c9d3dc" stroke-width="1.2"/>
+<path d="M36 182 H306 M36 182 V14" stroke="#1b2733" stroke-width="1.4" fill="none"/>
+<path d="M300 178 L307 182 L300 186 M32 20 L36 13 L40 20" stroke="#1b2733" stroke-width="1.4" fill="none"/>
+<text x="293" y="196" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#1b2733">λ</text>
+<text x="16" y="26" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#1b2733">w</text>
+<circle cx="70" cy="150" r="4" fill="#ffffff" stroke="#8796a5" stroke-width="1.4"/>
+<circle cx="92" cy="118" r="4" fill="#ffffff" stroke="#8796a5" stroke-width="1.4"/>
+<circle cx="128" cy="160" r="4" fill="#ffffff" stroke="#8796a5" stroke-width="1.4"/>
+<circle cx="150" cy="132" r="4" fill="#ffffff" stroke="#8796a5" stroke-width="1.4"/>
+<circle cx="186" cy="158" r="4" fill="#ffffff" stroke="#8796a5" stroke-width="1.4"/>
+<circle cx="84" cy="72" r="4" fill="#ffffff" stroke="#8796a5" stroke-width="1.4"/>
+<circle cx="256" cy="150" r="4" fill="#ffffff" stroke="#8796a5" stroke-width="1.4"/>
+<circle cx="278" cy="112" r="4" fill="#ffffff" stroke="#8796a5" stroke-width="1.4"/>
+<circle cx="122" cy="92" r="4" fill="#ffffff" stroke="#8796a5" stroke-width="1.4"/>
+<circle cx="150" cy="132" r="4.6" fill="#1b2733"/>
+<path d="M155 128 L188 104" stroke="#1d4f91" stroke-width="2.2"/>
+<path d="M192.0 101.0 L182.1 102.7 L187.4 110.0 Z" fill="#1d4f91"/>
+</svg>
